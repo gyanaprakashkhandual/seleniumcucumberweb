@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/Textarea.css";
+import "../css/Textarea.css";
 
 function Textarea({ input, setInput, output }) {
   return (

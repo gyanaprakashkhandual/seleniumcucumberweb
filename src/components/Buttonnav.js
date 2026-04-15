@@ -1,5 +1,5 @@
 import React from 'react';
-import "../Styles/Buttonnav.css";
+import "../css/Buttonnav.css";
 
 function Buttonnav({ onGenerate, onCopy }) {
   return (

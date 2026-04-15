@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback } from "react";
 import "./App.css";
-import Buttonnav from "./Components/Buttonnav";
-import Navbar from "./Components/Navbar";
-import Textarea from "./Components/Textarea";
-import Welcome from "./Components/Welcome";
+import Buttonnav from "./components/Buttonnav";
+import Navbar from "./components/Navbar";
+import Textarea from "./components/Textarea";
+import Welcome from "./components/Welcome";
 
 function App() {
   const [input, setInput] = useState(localStorage.getItem("input") || "");
@@ -61,15 +61,15 @@ function App() {
     });
 
     setOutput(stepDefinitions);
-    showCustomAlert("✅ Step Definitions Updated!");
+    showCustomAlert("Step Definitions Updated!");
   }, [input]);
 
   const handleCopy = () => {
     if (output.trim()) {
       navigator.clipboard.writeText(output);
-      showCustomAlert("✅ Step Definitions Copied!");
+      showCustomAlert("Step Definitions Copied!");
     } else {
-      showCustomAlert("⚠️ No output to copy!");
+      showCustomAlert("No output to copy!");
     }
   };
 
